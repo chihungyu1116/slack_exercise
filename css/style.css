@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 290px;
+  float: left;
+  display: block;
+  padding: 4px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.thumbnail:first-child {
+  margin-left: 0;
+}
+
+.thumbnail-img {
+  height: 200px;
+  width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.thumbnail-caption {
+  overflow: auto;
+  height: 75px;
+  padding: 10px 6px 6px;
+  color: #333;
+}

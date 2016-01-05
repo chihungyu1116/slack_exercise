@@ -1,0 +1,1 @@
+Per requirements, all modern browsers have already supports ES5 Array, Object methods, and Promise, if not polyfill should be added.
