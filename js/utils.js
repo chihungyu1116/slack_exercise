@@ -1,3 +1,5 @@
+'use strict'
+
 var Ajax = (function(){
   var OK = 200;
 
