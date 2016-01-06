@@ -13,9 +13,6 @@
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-  -o-transition: border .2s ease-in-out;
-  transition: border .2s ease-in-out;
 }
 
 .thumbnail:first-child {
@@ -31,7 +28,7 @@
 }
 
 .thumbnail-img {
-  max-width: 240px;
+  max-width: 230px;
   max-height: 300px;
 }
 
@@ -39,6 +36,7 @@
   overflow: auto;
   height: 80px;
   padding: 10px 6px 6px;
+  margin-top: 10px;
   color: #333;
 }
 
@@ -67,8 +65,8 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 640px;
+  width: 350px;
+  height: 600px;
   padding: 4px;
   margin-top: 10px;
   margin-left: auto;
@@ -79,8 +77,8 @@
 }
 
 .lightbox-img {
-  max-width: 340px;
-  max-height: 460px; 
+  max-width: 330px;
+  max-height: 440px; 
 }
 
 .lightbox .btn {
