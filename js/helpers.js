@@ -90,10 +90,10 @@ window.$closest = function( element, selector ) {
     element = element.parentNode;
   }
 
-  return element
+  return element;
 }
 
-} )( window )
+} )( window );
 
 window.$delegate = function ( target, selector, type, handler ) {
   function dispatchEvent(event) {

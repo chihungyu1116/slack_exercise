@@ -15,7 +15,7 @@ function Controller( model, view ) {
     var id = element.id.replace(/thumbnail-/, '');
 
     self.model.read( id, function( photo ) {
-      self.view.render( 'showPhoto', photo )
+      self.view.render( 'showPhoto', photo );
     });
   } );
 
@@ -25,13 +25,13 @@ function Controller( model, view ) {
 
   self.view.bind( 'photoNext', function() {
     self.model.read( 'next', function( photo ) {
-      self.view.render( 'replacePhoto', photo )
+      self.view.render( 'replacePhoto', photo );
     });
   } );
 
   self.view.bind( 'photoPrev', function() {
     self.model.read( 'prev', function( photo ) {
-      self.view.render( 'replacePhoto', photo )
+      self.view.render( 'replacePhoto', photo );
     });
   } );
 
@@ -48,11 +48,11 @@ function Controller( model, view ) {
       self.view.render( 'hidePhoto' );
     } else if ( keyCode === LEFT_ARROW_KEY ) {
       self.model.read( 'prev', function( photo ) {
-        self.view.render( 'replacePhoto', photo )
+        self.view.render( 'replacePhoto', photo );
       });
     } else if ( keyCode === RIGHT_ARROW_KEY ) {
       self.model.read( 'next', function( photo ) {
-        self.view.render( 'replacePhoto', photo )
+        self.view.render( 'replacePhoto', photo );
       });
     }
   } );
