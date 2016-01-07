@@ -17,7 +17,7 @@ function View() {
     "</div>"
   );
 
-  this.listTpl = '<div class="clearfix">{{list}}</div>'
+  this.listTpl = '<div class="clearfix">{{list}}</div>';
 }
 
 View.prototype.buildList = function( photos ) {
@@ -26,10 +26,10 @@ View.prototype.buildList = function( photos ) {
   var list = [];
 
   var list =  photos.map( function( photo ) {
-      return photoEngine.render( photo );
+    return photoEngine.render( photo );
   } );
 
-  return listEngine.render( { list: list } );
+  return listEngine.render( { list: list.join('') } );
 };
 
 View.prototype.buildPhoto = function( photo ) {
