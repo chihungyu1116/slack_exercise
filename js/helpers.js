@@ -61,7 +61,7 @@ window.$hasTag = function( element, tagName ) {
 }
 
 window.$hasId = function( element, id ) {
-  return element.id.toLowerCase() = id.toLowerCase();
+  return element.id.toLowerCase() === id.toLowerCase();
 }
 
 window.$hasMatch = function( element, selector ) {
