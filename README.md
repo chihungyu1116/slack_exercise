@@ -1,4 +1,4 @@
-Tested on Chrome Version 47.0.2526.106 (64-bit), Firefox 40.0.3, and IE 11.18.105140.0 via Microsoft Remote Desktop (IE Tech Preview)
+Tested on Chrome Version 47.0.2526.106 (64-bit), Firefox 40.0.3, Safari Version 9.0.2 (9537.86.3.9.1), and IE 11.18.105140.0 via Microsoft Remote Desktop (IE Tech Preview)
 
 Click on the index.html to open up the page
 
