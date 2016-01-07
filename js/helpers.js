@@ -48,6 +48,10 @@ window.$on = function( target, type, callback ) {
 }
 
 window.$hasClass = function( element, className ) {
+  if( !element.classList ) {
+    return;
+  }
+
   className = className.replace(/^\./, '');
   return element.classList.contains( className );
 }
@@ -60,7 +64,7 @@ window.$hasId = function( element, id ) {
   return element.id.toLowerCase() = id.toLowerCase();
 }
 
-window.$isMatch = function( element, selector ) {
+window.$hasMatch = function( element, selector ) {
   var reId = /#\w+/;
   var reTag = /^\w+/;
   var reClass = /\.\w+/;
@@ -82,7 +86,7 @@ window.$isMatch = function( element, selector ) {
 
 // Find the closest Dom node
 window.$closest = function( element, selector ) {
-  while( element && !$isMatch( element, selector) ) {
+  while( element && !$hasMatch( element, selector) ) {
     element = element.parentNode;
   }
 

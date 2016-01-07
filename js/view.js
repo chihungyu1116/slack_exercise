@@ -67,8 +67,6 @@ View.prototype.bind = function( event, handler ) {
     $delegate( this.$photoList, '.thumbnail', 'click', function( event ) {
       handler( this );
     } );
-  } else if ( event === 'photoHide' ) {
-
   } else if ( event === 'photoNext' ) {
     $on( this.$lightboxBtnNext, 'click', function( event ) {
       handler( this );
@@ -80,6 +78,12 @@ View.prototype.bind = function( event, handler ) {
   } else if ( event === 'bindKeys' ) {
     $on( document, 'keyup', function( event ) {
       handler( event.keyCode );
+    } );
+  } else if ( event === 'bindOverlayClick' ) {
+    $on( this.$overlay, 'click', function( event ) {
+      if ( event.target.id === 'overlay' ) {
+        handler();  
+      }
     } );
   }
 }

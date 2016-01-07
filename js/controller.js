@@ -35,6 +35,10 @@ function Controller( model, view ) {
     });
   } );
 
+  self.view.bind( 'bindOverlayClick', function() {
+    self.view.render( 'hidePhoto' );
+  } );
+
   self.view.bind( 'bindKeys', function( keyCode ) {
     var ESCAPE_KEY = 27;
     var LEFT_ARROW_KEY = 37;
